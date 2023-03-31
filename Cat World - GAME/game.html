@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cat World - GAME</title>
+</head>
+<body>
+    <section class="starter" id="starter">
+        <h1 class="tittle">Cat World 😺 - GAME</h1>
+        <input type="text" name="nombre" id="name-input" maxlength="25" placeholder="Escribe tu nombre para jugar">
+
+        <div class="botones-starter">
+            <button onclick="play()">Jugar</button>
+            <button onclick="showTutorial()">¿Cómo jugar?</button>
+        </div>
+
+        <p>Hecho por: BryanDev</p>
+    </section>
+
+    <section class="mapa" id="mapa">
+        <h1 class="tittle">Cat World 😺 - GAME</h1>
+        <p>Tu nombre: <span id="nombre-jugador"></span></p>
+
+        <canvas id="open-world" width="800px" height="230px"></canvas>
+        <div class="botones-movimiento" id="botones-movimiento"></div>
+
+        <button onclick="reset()">Salir 📤</button>
+    </section>
+
+    <section class="how-to-play" id="how-to-play">
+        <h1 class="tittle">Cat World 😺 - GAME</h1>
+        <h2>¿Cómo jugar a "Cat World"? 🤔</h2>
+
+        <div class="tutorial-div" id="tutorial-div"></div>
+
+        <button onclick="reset()">Salir 📤</button>
+    </section>
+
+    <!--Scripts-->
+    <script src="js/class/player.js"></script>
+    <script src="js/class/buttons.js"></script>
+    <script src="js/class/tutorial.js"></script>
+    <script src="js/code.js"></script>
+</body>
+</html>

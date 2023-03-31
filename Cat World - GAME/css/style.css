@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    background-image: url("../Imgs/BackgroundCatWorld.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+    color: #F5FFC9;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+}
+
+button {
+    background-color: #7AA874;
+    color: #F5FFC9;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: #539165;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    background: #617143;
+    border-radius: 10px;
+    border: none;
+}
+
+canvas { 
+   border: #222222;
+   border-radius: 20px;
+}
+
+input {
+    background-color: #7AA874;
+    color: #F5FFC9;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 250px;
+    height: 10px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+img {
+    display: flex;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+    width: 500px;
+}
+
+#starter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+#mapa, #how-to-play, .carta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tittle {
+    background-color: #7AA874;
+    border-radius: 10px;
+    border: none;
+    padding: 25px;
+}
+
+.tutorial-div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    background-color: #7AA874;
+    border: none;
+    border-radius: 10px;
+    padding: 1.25%;
+}
+
+.tuto {
+    background-color: #539165;
+    border: none;
+    border-radius: 8px;
+    padding: 1%;
+}
+
+.botones-movimiento-dentro {
+    background-color: #7AA874;
+    color: #F5FFC9;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 50px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.botones-movimiento, .botones-starter {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 360px) {
+    #starter, #mapa, #how-to-play, .botones-movimiento, .botones-starter {
+        flex-direction: column;
+        margin-top: 0px;
+        gap: 0px;
+    }
+}
